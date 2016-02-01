@@ -646,7 +646,7 @@ select:not([multiple]) {
   .nav-bar span,
   .nav-bar span:before,
   .nav-bar span:after {
-    background-color: #595959;
+    background-color: #d8a868;
     height: 2px;
     opacity: 1;
     position: absolute;
@@ -731,7 +731,7 @@ select:not([multiple]) {
   width: 500px;
   position: fixed;
   top: 0;
-  background: #fff;
+  background: #000;
   color: #666666;
   left: 0;
   z-index: 990;
@@ -1525,3 +1525,9 @@ h2.entry-title {
     margin-left: 25px; }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 767px) {
+  body {
+    background: url("../images/mgianniguitteaud.png") no-repeat fixed center top/cover;
+  }
+}

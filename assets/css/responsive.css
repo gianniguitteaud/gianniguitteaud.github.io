@@ -1,0 +1,210 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Table of contents]
+
+1. New Grid System
+2. Styles for devices(>=1700px)
+3. Styles for devices(>=1280px and <=1699px)
+4. Styles for devices(>=1280px and <=1499px)
+5. Styles for devices(>=1280px)
+6. Styles for devices(>=992px and <=1279px)
+7. Styles for devices(<=1279px)
+8. Styles for devices(<=1199px)
+9. Styles for devices(<=991px )
+10. Styles for devices(>=768px and <= 991px)
+11. Styles for devices(<=767px )
+12. Styles for devices(>=481px and <= 767px)
+13. Styles for devices(<=480px )
+14. Styles for devices(<=320px )
+*/
+/* -------------------------------------------------------------
+  Sass CSS3 Mixins! The Cross-Browser CSS3 Sass Library
+  By: Matthieu Aussaguel, http://www.mynameismatthieu.com, @matthieu_tweets
+------------------------------------------------------------- */
+/* 1. New Grid System */
+@media (min-width: 1700px) {
+  .col-xlg-1, .col-xlg-2, .col-xlg-3, .col-xlg-4, .col-xlg-5, .col-xlg-6, .col-xlg-7, .col-xlg-8, .col-xlg-9, .col-xlg-10, .col-xlg-11, .col-xlg-12 {
+    float: left; }
+
+  .col-xlg-12 {
+    width: 100%; }
+
+  .col-xlg-11 {
+    width: 91.66666667%; }
+
+  .col-xlg-10 {
+    width: 83.33333333%; }
+
+  .col-xlg-9 {
+    width: 75%; }
+
+  .col-xlg-8 {
+    width: 66.66666667%; }
+
+  .col-xlg-7 {
+    width: 58.33333333%; }
+
+  .col-xlg-6 {
+    width: 50%; }
+
+  .col-xlg-5 {
+    width: 41.66666667%; }
+
+  .col-xlg-4 {
+    width: 33.33333333%; }
+
+  .col-xlg-3 {
+    width: 25%; }
+
+  .col-xlg-2 {
+    width: 16.66666667%; }
+
+  .col-xlg-1 {
+    width: 8.33333333%; } }
+/* 2. Styles for devices(>=1700px) */
+@media (min-width: 1700px) {
+  #sidebar {
+    padding-top: 425px;
+    overflow: hidden; }
+
+  #meta-header {
+    height: 440px; } }
+/* 3. Styles for devices(>=1280px and <=1699px) */
+@media (min-width: 1500px) and (max-width: 1699px) {
+  .container {
+    width: 970px; } }
+/* 4. Styles for devices(>=1280px and <=1499px) */
+@media (min-width: 1280px) and (max-width: 1499px) {
+  .container {
+    width: 750px; } }
+/* 5. Styles for devices(>=1280px) */
+/* 6. Styles for devices(>=992px and <=1279px) */
+/* 7. Styles for devices(<=1279px) */
+@media (max-width: 1279px) {
+  #sidebar {
+    display: none; }
+
+  .main-content {
+    margin-top: 0; }
+
+  .open-mobile-sidebar #mobile-sidebar {
+    right: 0; }
+  .open-mobile-sidebar #nav-mobile-sidebar {
+    display: none; }
+
+  #leftbar {
+    width: 400px; }
+
+  #portfolio-bar {
+    position: static;
+    width: auto; }
+    #portfolio-bar .nav-bar,
+    #portfolio-bar .nav-close {
+      display: none; }
+
+  #content {
+    padding-left: 0; }
+
+  #mobile-nav {
+    display: block; }
+
+  #meta-header {
+    height: auto;
+    margin-top: 50px; }
+    #meta-header h1.page-title {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    #meta-header .title-content {
+      padding: 0 35px; } }
+/* 8. Styles for devices(<=1199px) */
+/* 9. Styles for devices(<=991px ) */
+@media (max-width: 991px) {
+  .side-bar {
+    margin-top: 50px; } }
+/* 10. Styles for devices(>=768px and <= 991px) */
+/* 11. Styles for devices(<=767px ) */
+@media (max-width: 767px) {
+  .portfolio-item {
+    width: 100%; }
+
+  .entry-footer > span + span {
+    margin-left: 30px; }
+
+  .share-it ul li {
+    margin-left: 25px; } }
+/* 12. Styles for devices(>=481px and <= 767px) */
+/* 13. Styles for devices(<=480px ) */
+@media (max-width: 480px) {
+  #mobile-sidebar,
+  #leftbar {
+    width: 300px; }
+
+  .entry-footer > span {
+    display: block; }
+    .entry-footer > span + span {
+      margin: 0; }
+
+  .share-it {
+    float: none; }
+
+  .pagination .page-numbers.prev {
+    margin: 0 30px 0 0; }
+  .pagination .page-numbers.next {
+    margin: 0 0 0 30px; }
+
+  .author-info .author-avatar {
+    float: none;
+    text-align: center;
+    margin-bottom: 15px; }
+  .author-info .author-title {
+    margin: 0 0 25px;
+    text-align: center; }
+  .author-info .author-description {
+    padding: 0; }
+
+  .comments-area .comment-item {
+    padding: 15px; }
+    .comments-area .comment-item .comment-avatar {
+      width: 50px; }
+    .comments-area .comment-item .comment-body {
+      padding-left: 0; }
+      .comments-area .comment-item .comment-body .comment-author,
+      .comments-area .comment-item .comment-body .comment-metadata {
+        display: block;
+        margin-bottom: 10px; }
+      .comments-area .comment-item .comment-body .comment-meta {
+        margin-bottom: 20px; }
+      .comments-area .comment-item .comment-body .reply {
+        margin: 15px 0 5px;
+        position: static; }
+
+  .comment-form .form-submit input {
+    width: 100%; }
+
+  .post-navigation a {
+    display: block;
+    float: none !important; }
+  .post-navigation .nav-next i,
+  .post-navigation .nav-previous i {
+    float: left;
+    margin: 6px 30px 0 0; }
+
+  .entry-header {
+    background: transparent;
+    box-shadow: 0 0 0;
+    margin: 0 0 40px;
+    padding: 0; }
+    .entry-header .cat-links {
+      -webkit-transform: translateX(0);
+      -khtml-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+      position: static;
+      margin-bottom: 20px; } }
+/* 14. Styles for devices(<=320px ) */
+@media (max-width: 320px) {
+  html, body {
+    overflow: auto; } }
+
+/*# sourceMappingURL=responsive.css.map */
